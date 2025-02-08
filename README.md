@@ -1,7 +1,11 @@
-## **1. アプリケーションの実行**
+## **1. dockerの起動**
 
 1. docker compose up -d コマンドを実行
-2. docker compose exec -it vite-container sh コマンドでコンテナの仮想環境にアクセス
+2. docker compose exec -it app sh コマンドでコンテナの仮想環境にアクセス
+
+
+## **2. アプリケーションの実行**
+
 3. npm create vite@latest
 4. Ok to Procedd?(y)：y
 5. Project name ：任意（defalutでも可）
