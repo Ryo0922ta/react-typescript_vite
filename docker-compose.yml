@@ -1,0 +1,14 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: ./docker/Dockerfile
+    ports:
+      - 5173:5173
+    # ホストマシンの(./app)をコンテナ内のディレクトリ（/var/www/html/app） にマウント
+    volumes:
+      - ./app/:/var/www/html/app
+
+    environment:
+      - WATCHPACK_POLLING=true
+    tty: true

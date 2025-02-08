@@ -1,0 +1,9 @@
+# ベースイメージの指定
+FROM node:lts-alpine3.20
+
+#作業ディレクトリ
+WORKDIR /var/www/html/app
+
+# 依存関係をインストール
+RUN npm install
+
